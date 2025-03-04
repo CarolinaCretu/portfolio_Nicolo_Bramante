@@ -45,7 +45,7 @@
         font-weight: bold;
         }
         .custom-text {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             line-height: 2; /* Increases space between lines */
             background-color: rgba(0, 0, 0, 0); /* Base navbar color */
             border: none;
@@ -56,10 +56,22 @@
         }
         .carousel-item img {
         max-width: 100%;
-        max-height: 400px; /* Adjust the height as needed */
-        object-fit: cover; /* Ensures the image maintains aspect ratio */
-        margin: auto; /* Centers the image */
-}
+        }
+        .responsive-img {
+        width: 100%; /* Pe desktop, imaginea ocupă 40% din lățimea containerului */
+        max-width: 500px; /* Dar nu mai mare de 500px */
+        height: auto; /* Păstrează proporțiile */
+        transform: rotate(-2deg);
+        transition: all 0.3s ease;
+        }
+
+        /* Pe telefoane (ecrane mai mici de 768px) */
+        @media (max-width: 768px) {
+            .responsive-img {
+                width: 80%; /* Ocupă mai mult spațiu pe mobil */
+                max-width: 300px; /* Limită pentru a nu fi prea mare */
+            }
+        }
     </style>
 </head>
  
@@ -67,7 +79,7 @@
     <div class="bg-primary text-white text-center" style="background: url('static/images/Wall4.png') repeat; background-size: auto; height: 100%;">
         <div class="container-fluid d-flex align-items-center">
             <div class="col-md-5">
-              <img src="static/images/Paper name2.png" alt="img" class="img-fluid" style="height:25vh; width:auto; transform: rotate(-2deg); transition: all 0.3s ease;">
+              <img src="static/images/Paper name2.png" alt="img" class="img-fluid responsive-img">
             </div>
             <nav class="navbar navbar-expand-lg ms-auto">
               <ul class="nav justify-content-center mx-auto">
@@ -108,7 +120,7 @@
       </div>
     </div>
   </div>
-</div>c
+</div>
 
 <p> </p>
 
