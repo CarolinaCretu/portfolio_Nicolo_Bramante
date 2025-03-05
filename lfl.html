@@ -51,27 +51,27 @@
             border: none;
             backdrop-filter: blur(5px);
         }
-        .instagram-media {
-    width: 100% !important;
-    max-width: 400px !important; /* Try adjusting this for larger display */
-    min-width: 326px !important;
-    height: auto !important;
-    aspect-ratio: 4 / 5; /* Instagram reels aspect ratio */
-}
+                .instagram-media {
+            width: 100% !important;
+            max-width: 400px !important; /* Try adjusting this for larger display */
+            min-width: 326px !important;
+            height: auto !important;
+            aspect-ratio: 4 / 5; /* Instagram reels aspect ratio */
+        }
 
-/* Ensure Instagram embeds are not affected by iframe styles */
-.instagram-wrapper blockquote {
-    width: 100% !important;
-    max-width: 400px !important; 
-    min-width: 326px !important;
-    height: auto !important;
-    display: block;
-}
+        /* Ensure Instagram embeds are not affected by iframe styles */
+            .instagram-wrapper blockquote {
+                width: 100% !important;
+                max-width: 400px !important; 
+                min-width: 326px !important;
+                height: auto !important;
+            }
 
         /* Prevent Instagram videos from being affected by YouTube iframe styles */
         .instagram-wrapper iframe {
             width: auto !important;
             height: auto !important;
+
         }
         
         .responsive-img {
@@ -111,7 +111,7 @@
     <div class="bg-primary text-white text-center" style="background: url('static/images/Wall4.png') repeat; background-size: auto; height: 100%;">
         <div class="container-fluid d-flex align-items-center">
             <div class="col-md-5">
-              <img src="static/images/Paper name2.png" alt="img" class="img-fluid responsive-img">
+              <img src="static/images/B.png" alt="img" class="img-fluid responsive-img">
             </div>
             <nav class="navbar navbar-expand-lg ms-auto">
               <ul class="nav justify-content-center mx-auto">
@@ -142,7 +142,8 @@
               </div>
             </div>
             <p>&emsp;</p>
-            <div class="instagram-wrapper">
+            <div class="container d-flex justify-content-center">
+            </div><div class="instagram-wrapper">
               <blockquote class="instagram-media" 
                   data-instgrm-permalink="https://www.instagram.com/reel/DFsuSP3s-80/?utm_source=ig_embed&amp;utm_campaign=loading" 
                   data-instgrm-version="14" 
@@ -169,8 +170,7 @@
             
                 <script async src="//www.instagram.com/embed.js"></script>
             </div>
-            
-            
+          </div>
 
             
             <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
