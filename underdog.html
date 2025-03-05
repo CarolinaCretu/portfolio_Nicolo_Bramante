@@ -9,25 +9,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <style>
         .transparent-card {
-          background-color: rgba(0, 0, 0, 0); /* Base navbar color */
+          background-color: rgba(0, 0, 0, 0);
           border: none;
-          backdrop-filter: blur(5px); /* Optional: adds a blur effect */
+          backdrop-filter: blur(5px); 
         }
         .card-img-left {
           object-fit: cover;
-          height: 100%; /* Ensures the image fills the column height */
+          height: 100%; 
         }
         .nav-link {
             color: #ffffff !important;
             font-size: 1.5rem;
         }
         .nav-link:hover {
-            color: #0d6efd !important; /* Optional: Lighter blue shade for hover effect */
+            color: #0d6efd !important; 
         }
         .glowing-navbar {
-            background-color: rgba(0, 0, 0, 0); /* Base navbar color */
+            background-color: rgba(0, 0, 0, 0); 
             box-shadow: 0 0 30px #0d6efd;
-            width: 100%; /* Full width */
+            width: 100%; 
         }
         .glowing-line {
             width: 100%;
@@ -36,8 +36,8 @@
             box-shadow: 0 0 30px #0d6efd;
         }
         .img-fixed {
-        max-width: 400px; /* Fixed size for the image */
-        height: auto; /* Maintain aspect ratio */
+        max-width: 400px; 
+        height: auto; 
         }
         .american-typewriter {
         font-family: 'Courier', serif;
@@ -46,8 +46,8 @@
         }
         .custom-text {
             font-size: 1.5rem;
-            line-height: 2; /* Increases space between lines */
-            background-color: rgba(0, 0, 0, 0); /* Base navbar color */
+            line-height: 2; 
+            background-color: rgba(0, 0, 0, 0); 
             border: none;
             backdrop-filter: blur(5px);
         }
@@ -56,10 +56,24 @@
         }
         .carousel-item img {
         max-width: 100%;
-        max-height: 400px; /* Adjust the height as needed */
-        object-fit: cover; /* Ensures the image maintains aspect ratio */
-        margin: auto; /* Centers the image */
-}
+        max-height: 400px;
+        object-fit: cover; 
+        margin: auto; 
+        }
+        .responsive-img {
+        width: 100%; /* Pe desktop, imaginea ocupă 40% din lățimea containerului */
+        max-width: 500px; /* Dar nu mai mare de 500px */
+        height: auto; /* Păstrează proporțiile */
+        transform: rotate(-2deg);
+        transition: all 0.3s ease;
+        }
+        /* Pe telefoane (ecrane mai mici de 768px) */
+        @media (max-width: 768px) {
+            .responsive-img {
+                width: 100%; /* Ocupă mai mult spațiu pe mobil */
+                max-width: 500px; /* Limită pentru a nu fi prea mare */
+            }
+        }
     </style>
 </head>
  
@@ -67,54 +81,41 @@
     <div class="bg-primary text-white text-center" style="background: url('static/images/Wall4.png') repeat; background-size: auto; height: 100%;">
         <div class="container-fluid d-flex align-items-center">
             <div class="col-md-5">
-              <img src="static/images/Paper name2.png" alt="img" class="img-fluid" style="height:25vh; width:auto; transform: rotate(-2deg); transition: all 0.3s ease;">
+              <img src="static/images/Paper name2.png" alt="img" class="img-fluid responsive-img">
             </div>
             <nav class="navbar navbar-expand-lg ms-auto">
-            <ul class="nav justify-content-center mx-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">About Me</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="mywork.html" role="button" aria-expanded="false">My Work</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="mywork.html">ALL</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="adrenaline.html">Adrenaline</a></li>
-                    <li><a class="dropdown-item" href="underdog.html">The Underdog</a></li>
-                    <li><a class="dropdown-item" href="lfl.html">LFL</a></li>
-                    <li><a class="dropdown-item" href="acting.html">Acting</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </nav>
+              <ul class="nav justify-content-center mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="mywork.html">My Work</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </nav>
           </div>
 
               
           <p>&emsp;</p>
           <div class="transparent-card">
-          <img src="static/images/Underdog logo.png" alt="img" style="width:50vh;height:auto">
-          
-          <div class="container d-flex justify-content-center">
-              <div class="w-75 text-center">
-                  <h5><i>The Underdog</i> is an independent film I'm currently developing and starring in. 
-                      The story follows Lele, an MMA fighter whose biggest challenge out the cage 
-                      is proving to everyone, including himself, that he belongs. As he battles to revive his self-esteem and fight IQ, 
-                      he sets his sights on <i>The Underdog</i> tournament, a chance to change his life forever.</h5>
-              </div>
+            <img src="static/images/Underdog logo.png" alt="img" style="width:50vh;height:auto">
+            
+            <div class="container d-flex justify-content-center">
+                <div class="w-75 text-center">
+                    <h5><i>The Underdog</i> is an independent film I'm currently developing and starring in. 
+                        The story follows Lele, an MMA fighter whose biggest challenge out the cage 
+                        is proving to everyone, including himself, that he belongs. As he battles to revive his self-esteem and fight IQ, 
+                        he sets his sights on <i>The Underdog</i> tournament, a chance to change his life forever.</h5>
+                </div>
             </div>
-            <p>&emsp;</p>
-            <p>&emsp;</p>
-            <p>&emsp;</p>
-          
           </div>
             
             
             <hr class="glowing-line">
             <p>© 2025 Nicolo Bramante</p>
-            <p>&emsp;</p>
             <p>&emsp;</p>
           
     </div>
