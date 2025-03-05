@@ -51,10 +51,25 @@
             border: none;
             backdrop-filter: blur(5px);
         }
+        .instagram-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            padding: 10px;
+        }
+
         .instagram-media {
             width: 100% !important;
-            max-width: 340px !important; /* Ensures it doesn't expand */
+            max-width: 340px !important;
             min-width: 326px !important;
+            height: auto !important;
+        }
+
+        /* Prevent Instagram videos from being affected by YouTube iframe styles */
+        .instagram-wrapper iframe {
+            width: auto !important;
             height: auto !important;
         }
         
@@ -126,8 +141,8 @@
               </div>
             </div>
             <p>&emsp;</p>
-            <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-                <blockquote class="instagram-media" 
+            <div class="instagram-wrapper">
+              <blockquote class="instagram-media" 
                   data-instgrm-permalink="https://www.instagram.com/reel/DFsuSP3s-80/?utm_source=ig_embed&amp;utm_campaign=loading" 
                   data-instgrm-version="14" 
                   style="max-width: 340px; min-width: 326px; width: 30%;">
