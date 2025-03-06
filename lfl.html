@@ -290,6 +290,12 @@
               window.instgrm.Embeds.process();
           }
       };
+      
+      setTimeout(() => {
+            document.getElementById("preloader").style.display = "none";
+            document.getElementById("content").classList.remove("d-none");
+        }, 2000);
+    
   </script>
   </body>
 
