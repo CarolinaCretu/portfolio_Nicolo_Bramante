@@ -111,6 +111,9 @@
             align-items: center;
             min-height: 400px; /* Adjust height as needed */
         }
+        .carousel-inner {
+          overflow: hidden; /* This will fix the sliding effect */
+        }
         /* Full-page preloader */
         #preloader {
             position: fixed;
@@ -179,104 +182,59 @@
         <center><h3>Reels</h3></center>
           
         <center>
-            <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-          
-                  <div class="carousel-item active">
-                      <blockquote class="instagram-media" 
-                          data-instgrm-permalink="https://www.instagram.com/reel/DFsuSP3s-80/?utm_source=ig_embed&amp;utm_campaign=loading" 
-                          data-instgrm-version="14" 
-                          style="max-width: 340px; min-width: 326px; width: 100%;">
-                      </blockquote>
-                  </div>
-          
-                  <div class="carousel-item">
-                      <blockquote class="instagram-media" 
-                          data-instgrm-permalink="https://www.instagram.com/reel/DF-lIyPtBiZ/?utm_source=ig_embed&amp;utm_campaign=loading" 
-                          data-instgrm-version="14" 
-                          style="max-width: 340px; min-width: 326px; width: 100%;">
-                      </blockquote>
-                  </div>
-          
-                  <div class="carousel-item">
-                      <blockquote class="instagram-media" 
-                          data-instgrm-permalink="https://www.instagram.com/reel/DDProuVNaEP/?utm_source=ig_embed&amp;utm_campaign=loading" 
-                          data-instgrm-version="14" 
-                          style="max-width: 340px; min-width: 326px; width: 100%;">
-                      </blockquote>
-                  </div>
-          
-                  <div class="carousel-item">
-                      <blockquote class="instagram-media" 
-                          data-instgrm-permalink="https://www.instagram.com/reel/DDPO0ijNltj/?utm_source=ig_embed&amp;utm_campaign=loading" 
-                          data-instgrm-version="14" 
-                          style="max-width: 340px; min-width: 326px; width: 100%;">
-                      </blockquote>
-                  </div>
-              </div>
-          
-              <!-- Carousel Controls -->
-              <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-              </button>
-            </div> 
-            
-              <script async src="//www.instagram.com/embed.js"></script>
-            </center>
-            <p>&emsp;</p>
-        <center><h3>Long Format</h3></center>
           <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-
-                  <div class="carousel-item active">
-                      <div class="row">
-                        <div class="col-12 col-sm-6 col-md-4">
-                          <div class="ratio ratio-16x9">
-                            <iframe width="460" height="215" src="https://www.youtube.com/embed/5bY1x5VkKMY?si=NteUx1puQJ_4tTo2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                          </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4">
-                          <div class="ratio ratio-16x9">
-                            <iframe width="460" height="215" src="https://www.youtube.com/embed/k3A7Q90KPbg?si=Q2gpLc9hka-dnCM-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                          </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4">
-                          <div class="ratio ratio-16x9">
-                            <iframe width="460" height="215" src="https://www.youtube.com/embed/_yqwAzcluYM?si=O6B2I0RFKWYrr6L9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-
-                  <div class="carousel-item ">
-                      <div class="row">
-                        <div class="col-12 col-sm-6 col-md-4">
-                          <div class="ratio ratio-16x9">
-                            <iframe width="460" height="215" src="https://www.youtube.com/embed/hA41ku6Zf34?si=6-wdrn2kY9CK8ygx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                          </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4">
-                          <div class="ratio ratio-16x9">
-                            <iframe width="460" height="215" src="https://www.youtube.com/embed/QZ0v4cOszRk?si=OYX7JKyD97UQynNl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-              </div>
-          
-              <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              </button>
-          </div>   
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <blockquote class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/reel/DFsuSP3s-80/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        data-instgrm-version="14" 
+                        style="max-width: 340px; min-width: 326px; width: 100%;">
+                    </blockquote>
+                </div>
+                <div class="carousel-item">
+                    <blockquote class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/reel/DF-lIyPtBiZ/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        data-instgrm-version="14" 
+                        style="max-width: 340px; min-width: 326px; width: 100%;">
+                    </blockquote>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
         </div>
+            </center>
+
+            <p>&emsp;</p>
+
+        <center><h3>Long Form</h3></center>
+
+          <div id="longFormatCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <iframe width="460" height="215" src="https://www.youtube.com/embed/5bY1x5VkKMY"></iframe>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <iframe width="460" height="215" src="https://www.youtube.com/embed/k3A7Q90KPbg"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#longFormatCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#longFormatCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+</div>
+
+<script async src="//www.instagram.com/embed.js"></script>
+
               <hr class="glowing-line">
               <p>© 2025 Nicolò Bramante</p>
               <p>&emsp;</p>
