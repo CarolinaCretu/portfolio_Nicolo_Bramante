@@ -267,7 +267,18 @@
             document.getElementById("preloader").style.display = "none";
             document.getElementById("content").classList.remove("d-none");
         }, 2000);
-
+        
+        document.addEventListener('DOMContentLoaded', function () {
+    let carousel = document.getElementById('longFormatCarousel');
+    carousel.addEventListener('slid.bs.carousel', function () {
+        let iframes = document.querySelectorAll('.carousel-item.active iframe');
+        iframes.forEach(iframe => {
+            let src = iframe.src;
+            iframe.src = "";
+            iframe.src = src; // Reloads the iframe to ensure the video plays
+        });
+    });
+});
   </script>
   </body>
 
