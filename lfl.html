@@ -9,25 +9,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <style>
         .transparent-card {
-          background-color: rgba(0, 0, 0, 0);
-          border: none;
-          backdrop-filter: blur(5px); 
-        }
-        .card-img-left {
-          object-fit: cover;
-          height: 100%; 
+            background-color: rgba(0, 0, 0, 0);
+            border: none;
+            backdrop-filter: blur(5px);
         }
         .nav-link {
             color: #ffffff !important;
             font-size: 1.5rem;
         }
         .nav-link:hover {
-            color: #0d6efd !important; 
+            color: #0d6efd !important;
         }
         .glowing-navbar {
-            background-color: rgba(0, 0, 0, 0); 
+            background-color: rgba(0, 0, 0, 0);
             box-shadow: 0 0 30px #0d6efd;
-            width: 100%; 
+            width: 100%;
         }
         .glowing-line {
             width: 100%;
@@ -36,82 +32,59 @@
             box-shadow: 0 0 30px #0d6efd;
         }
         .img-fixed {
-        max-width: 400px; 
-        height: auto; 
-        }
-        .american-typewriter {
-        font-family: 'Courier', serif;
-        font-size: 1.5rem;
-        font-weight: bold;
+            max-width: 400px;
+            height: auto;
         }
         .custom-text {
             font-size: 1.5rem;
-            line-height: 2; 
-            background-color: rgba(0, 0, 0, 0); 
+            line-height: 2;
+            background-color: rgba(0, 0, 0, 0);
             border: none;
             backdrop-filter: blur(5px);
         }
         .instagram-media {
             width: 100% !important;
-            max-width: 400px !important; /* Try adjusting this for larger display */
+            max-width: 400px !important;
             min-width: 326px !important;
             height: auto !important;
-            aspect-ratio: 4 / 5; /* Instagram reels aspect ratio */
+            aspect-ratio: 4 / 5;
         }
-        
         .responsive-img {
-        width: 100%; /* Pe desktop, imaginea ocupă 40% din lățimea containerului */
-        max-width: 500px; /* Dar nu mai mare de 500px */
-        height: auto; /* Păstrează proporțiile */
-        transform: rotate(-2deg);
-        transition: all 0.3s ease;
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            transform: rotate(-2deg);
+            transition: all 0.3s ease;
         }
-        /* Pe telefoane (ecrane mai mici de 768px) */
         @media (max-width: 768px) {
             .responsive-img {
-                width: 100%; /* Ocupă mai mult spațiu pe mobil */
-                max-width: 500px; /* Limită pentru a nu fi prea mare */
+                width: 100%;
+                max-width: 500px;
             }
-        }
-        @media (max-width: 768px) {
             .carousel-item .col-12 {
                 flex: 0 0 100%;
                 max-width: 100%;
             }
         }
         .carousel-item {
-            width: 100%;
-        }
-        .video-container {
-            padding: 10px;
-        }
-        iframe {
-            width: 100%;
-            height: 200px; /* Adjust height as needed */
-        }
-        /* Center carousel */
-        .carousel-item {
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 400px; /* Adjust height as needed */
-            overflow: hidden; /* This will fix the sliding effect */
+            min-height: 400px;
+            overflow: hidden;
         }
-        /* Full-page preloader */
         #preloader {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('static/images/Wall4.png') repeat center center;;
+            background: url('static/images/Wall4.png') repeat center center;
             display: flex;
             justify-content: center;
             align-items: center;
             z-index: 9999;
         }
-
-        /* Loading spinner */
         .spinner-border {
             width: 4rem;
             height: 4rem;
@@ -271,18 +244,6 @@
             document.getElementById("preloader").style.display = "none";
             document.getElementById("content").classList.remove("d-none");
         }, 2000);
-        
-        document.addEventListener('DOMContentLoaded', function () {
-    let carousel = document.getElementById('longFormatCarousel');
-    carousel.addEventListener('slid.bs.carousel', function () {
-        let iframes = document.querySelectorAll('.carousel-item.active iframe');
-        iframes.forEach(iframe => {
-            let src = iframe.src;
-            iframe.src = "";
-            iframe.src = src; // Reloads the iframe to ensure the video plays
-        });
-    });
-});
   </script>
   </body>
 
