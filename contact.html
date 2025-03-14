@@ -9,7 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <style>
-    
+        .transparent-card {
+          background-color: rgba(0, 0, 0, 0);
+          border: none;
+          backdrop-filter: blur(5px); 
+        }
+        .card-img-left {
+          object-fit: cover;
+          height: 100%; 
+        }
         .nav-link {
             color: #ffffff !important;
             font-size: 1.5rem;
@@ -40,7 +48,15 @@
             border: none;
             backdrop-filter: blur(5px);
         }
-    
+        .instagram-media div {
+          display: none !important;
+        }
+        .carousel-item img {
+        max-width: 100%;
+        max-height: 400px;
+        object-fit: cover; 
+        margin: auto; 
+        }
         .responsive-img {
         width: 100%; /* Pe desktop, imaginea ocupă 40% din lățimea containerului */
         max-width: 500px; /* Dar nu mai mare de 500px */
@@ -77,39 +93,6 @@
         .instagram-icon {
             color: #E1306C; /* Instagram Pink */
         }
-        .image-container {
-            position: relative;
-            width: 470px;
-            height: 470px;
-        }
-        .overlay-text-top {
-            position: absolute;
-            top: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-        }
-        .overlay-text-middle {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -100%);
-            text-align: center;
-        }
-        .overlay-button {
-            position: absolute;
-            top: 65%;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .overlay-buttons-bottom {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 10px;
-        }
     </style>
 </head>
  
@@ -142,39 +125,29 @@
         </div>   
 
             
-        <div class="container d-flex justify-content-center mt-5">
-            <div class="image-container">
-                <img src="static/images/Paper 2.png" class="img-fluid" alt="Responsive image" style="width:470px;height:470px">
-                
-                <!-- Top Text -->
-                <div class="overlay-text-top">
-                    <h3 style="color:#0d6efd"><b>Contact me!</b></h3>
-                </div>
-                
-                <!-- Middle Text -->
-                <div class="overlay-text-middle">
-                    <h4>nicolobramante@gmail.com</h4>
-                </div>
-                
-                <!-- Centered Button -->
-                <div class="overlay-button">
-                    <a href="https://wa.me/31612957283" class="btn btn-success btn-lg fw-bold px-4 py-2" target="_blank">
-                        <i class="bi bi-whatsapp"></i> Chat on WhatsApp
-                    </a>
-                </div>
-                
-                <!-- Bottom Buttons -->
-                <div class="overlay-buttons-bottom">
-                    <a href="https://www.linkedin.com/in/nicolobramante" class="btn btn-primary" target="_blank">
-                        <i class="bi bi-linkedin"></i> LinkedIn
-                    </a>
-                    <a href="https://www.instagram.com/nicolobramantee/" class="btn btn-light border" target="_blank">
-                        <i class="bi bi-instagram instagram-icon"></i> Instagram
-                    </a>
-                    <a href="https://www.youtube.com/@nicolobramante" class="btn btn-danger" target="_blank">
-                        <i class="bi bi-youtube"></i> YouTube
-                    </a>
-                </div>
+        <div class="d-flex justify-content-center align-items-center vh-100 text-center">
+            <img src="static/images/Paper 2.png" class="img-fluid" alt="Responsive image" style="width:470px;height:470px">
+            <h3 style="color:#0d6efd"><b>Contact me!</b></h3>
+            <p>&emsp;</p>
+            <h4>nicolobramante@gmail.com</h4>
+            <p>&emsp;</p>
+        
+            <a href="https://wa.me/31612957283" class="btn btn-success btn-lg fw-bold px-4 py-2" target="_blank">
+                <i class="bi bi-whatsapp"></i> Chat on WhatsApp
+            </a>
+        
+            <div class="mt-4 d-flex flex-wrap justify-content-center gap-2">
+                <a href="https://www.linkedin.com/in/nicolobramante" class="btn btn-primary" target="_blank">
+                    <i class="bi bi-linkedin"></i> LinkedIn
+                </a>
+        
+                <a href="https://www.instagram.com/nicolobramantee/" class="btn btn-light border" target="_blank">
+                    <i class="bi bi-instagram instagram-icon"></i> Instagram
+                </a>
+        
+                <a href="https://www.youtube.com/@nicolobramante" class="btn btn-danger" target="_blank">
+                    <i class="bi bi-youtube"></i> YouTube
+                </a>
             </div>
         </div>
         
